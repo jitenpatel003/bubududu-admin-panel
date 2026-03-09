@@ -1,0 +1,25 @@
+workflows:
+  android-release:
+    name: Bubu Dudu Admin - Android APK
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      vars:
+        PACKAGE_NAME: "com.bubududu.adminpanel"
+    scripts:
+      - name: Get Flutter packages
+        script: flutter pub get
+      - name: Add google-services.json
+        script: |
+          echo $GOOGLE_SERVICES_JSON | base64 --decode > android/app/google-services.json
+      - name: Build APK
+        script: flutter build apk --release
+    artifacts:
+      - build/app/outputs/flutter-apk/app-release.apk
+    publishing:
+      email:
+        recipients:
+          - jpofficial12345@gmail.com
+        notify:
+          success: true
+          failure: true
