@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "781488307737",
+    "project_id": "bubu-dudu-admin-panel",
+    "storage_bucket": "bubu-dudu-admin-panel.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781488307737:android:247c5cfcd08d12111f3488",
+        "android_client_info": {
+          "package_name": "com.bubududu.admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMraMkxkVwozFhUNDXtWH83WkMnqWK4XI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
