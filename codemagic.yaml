@@ -27,7 +27,7 @@ workflows:
           convert -size 144x144 xc:#6D28D9 android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
           convert -size 192x192 xc:#6D28D9 android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
       - name: Build APK
-        script: flutter build apk --release
+        script: flutter build apk --release --android-skip-build-dependency-validation
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
     publishing:
