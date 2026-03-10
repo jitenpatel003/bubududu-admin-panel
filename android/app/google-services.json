@@ -7,15 +7,15 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:781488307737:android:247c5cfcd08d12111f3488",
+        "mobilesdk_app_id": "1:781488307737:android:a64397e11a46ced21f3488",
         "android_client_info": {
-          "package_name": "com.bubududu.admin"
+          "package_name": "com.bubududu.adminpanel"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAMraMkxkVwozFhUNDXtWH83WkMnqWK4XI"
+          "current_key": "AIzaSyBmgGP2gthDHFE8nvi7G_f-Y3FNwetdBZ4"
         }
       ],
       "services": {
