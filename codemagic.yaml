@@ -14,6 +14,18 @@ workflows:
       - name: Add google-services.json
         script: |
           echo $GOOGLE_SERVICES_JSON | base64 --decode > android/app/google-services.json
+      - name: Create launcher icons
+        script: |
+          mkdir -p android/app/src/main/res/mipmap-mdpi
+          mkdir -p android/app/src/main/res/mipmap-hdpi
+          mkdir -p android/app/src/main/res/mipmap-xhdpi
+          mkdir -p android/app/src/main/res/mipmap-xxhdpi
+          mkdir -p android/app/src/main/res/mipmap-xxxhdpi
+          convert -size 48x48 xc:#6D28D9 android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+          convert -size 72x72 xc:#6D28D9 android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+          convert -size 96x96 xc:#6D28D9 android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+          convert -size 144x144 xc:#6D28D9 android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+          convert -size 192x192 xc:#6D28D9 android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
       - name: Build APK
         script: flutter build apk --release
     artifacts:
