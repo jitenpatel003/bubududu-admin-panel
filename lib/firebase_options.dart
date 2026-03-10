@@ -34,7 +34,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAMraMkxkVwozFhUNDXtWH83WkMnqWK4XI',
+    apiKey: 'AIzaSyBmgGP2gthDHFE8nvi7G_f-Y3FNwetdBZ4',
     appId: '1:781488307737:web:247c5cfcd08d12111f3488',
     messagingSenderId: '781488307737',
     projectId: 'bubu-dudu-admin-panel',
@@ -44,8 +44,8 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAMraMkxkVwozFhUNDXtWH83WkMnqWK4XI',
-    appId: '1:781488307737:android:247c5cfcd08d12111f3488',
+    apiKey: 'AIzaSyBmgGP2gthDHFE8nvi7G_f-Y3FNwetdBZ4',
+    appId: '1:781488307737:android:a64397e11a46ced21f3488',
     messagingSenderId: '781488307737',
     projectId: 'bubu-dudu-admin-panel',
     storageBucket: 'bubu-dudu-admin-panel.firebasestorage.app',
